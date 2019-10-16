@@ -11,7 +11,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "prettier --write \"components/*.js\" \"components/**/*.js\" \"pages/*/*.js\"",
-      "pre-push": "tsc && yarn lint"
+      "pre-push": "yarn lint"
     }
   },
   "dependencies": {
