@@ -1,7 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
-import Head from '../components/head'
-import Nav from '../components/nav'
 
 import tw from 'tailwind.macro'; //yarn add tailwind.macro@next --dev 
 import styled from 'styled-components';
