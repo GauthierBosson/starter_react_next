@@ -1,2 +1,4 @@
 pages/_app.js
 pages/_document.js
+components/head.js
+components/nav.js
