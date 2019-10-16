@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import Button from './Button';
+import Button from "./Button";
 
 export default { title: "Button" };
 
 export const test = () => <Button />;
 
-test.story = {name: 'test button'};
+test.story = { name: "test button"                 };

@@ -9,8 +9,10 @@
     "lint": "eslint components/**/*.js components/*.js pages/*.js"
   },
   "husky": {
-    "pre-commit": "prettier --write \"components/*.js\" \"components/**/*.js\" \"pages/*/*.js\"",
-    "pre-push": "tsc"
+    "hooks": {
+      "pre-commit": "prettier --write \"components/*.js\" \"components/**/*.js\" \"pages/*/*.js\"",
+      "pre-push": "tsc && yarn lint"
+    }
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
