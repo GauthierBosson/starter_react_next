@@ -6,6 +6,4 @@ export default { title: "Button" };
 
 export const test = () => <Button />;
 
-test.story = {
-  name: 'test button'
-};
+test.story = {name: 'test button'};

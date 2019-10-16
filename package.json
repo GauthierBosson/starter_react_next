@@ -5,7 +5,12 @@
     "build": "next build",
     "start": "next start",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "lint": "eslint components/**/*.js components/*.js pages/*.js"
+  },
+  "husky": {
+    "pre-commit": "prettier --write \"components/*.js\" \"components/**/*.js\" \"pages/*/*.js\"",
+    "pre-push": "tsc"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
@@ -24,6 +29,7 @@
     "babel-loader": "^8.0.6",
     "eslint": "^6.5.1",
     "eslint-plugin-react": "^7.16.0",
+    "husky": "^3.0.9",
     "postcss-loader": "^3.0.0",
     "prettier": "1.18.2",
     "tailwind.macro": "^1.0.0-alpha.10",
